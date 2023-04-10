@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dépannage de serrurerie urgente - S.O.S Serrurier Mobile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+
+		<h1>S.O.S Serrurier Mobile</h1>
+		<p>Intervention 24h/24 et 7j/7<br>
+
+		<nav>
+			<a href="#services">Nos services</a>
+			<a href="#tarifs">Nos tarifs</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+ 	</header>
+
+	<div class="container sticky">
+		<button class="call-button">
+			<i class='fas fa-phone'></i><span class="phone-number"><a href="tel:+33769592069">07 69 59 20 69</a></span>
+		</button>
+	</div>
+
+	<main>
+
+		<section id="services" class="services-container">
+
+			<h2>Nos services</h2>
+
+		  <ul class="services-list">
+		    <li class="service-item"><i class='fas fa-door-open'></i> Ouverture de porte</li>
+		    <li class="service-item"><i class='	fas fa-unlock-alt'></i> Changement de serrure</li>
+		    <li class="service-item"><i class='fas fa-tools'> </i> Réparation de serrure</li>
+		    <li class="service-item"><i class='fas fa-lock-open'></i> Installation de serrure</li>
+		    <li class="service-item"><i class='fas fa-lock'></i> Pose de verrous</li>
+		    <li class="service-item"><i class='fas fa-piggy-bank'></i> Ouverture de coffre-fort</li>
+		    <li class="service-item"><i class='fas fa-ruler-combined'></i> Réparation de porte</li>
+		    <li class="service-item"><i class='fas fa-door-closed'></i> Installation de porte blindée</li>
+		    <li class="service-item"><i class='fas fa-key'></i> Duplication de clé</li>
+		    <li class="service-item"><i class='fas fa-house-damage'></i> Conseils en sécurité de la maison</li>
+		  </ul>
+		</section>
+
+		<section id="tarifs">
+			<h2>Nos tarifs</h2>
+			<p>Nous pratiquons des tarifs transparents et compétitifs. Le devis est gratuit et sans engagement.</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Intervention</th>
+						<th>Prix</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Ouverture de porte simple</td>
+						<td>à partir de 80€</td>
+					</tr>
+					<tr>
+						<td>Remplacement de serrure</td>
+						<td>à partir de 120€</td>
+					</tr>
+					<tr>
+						<td>Blindage de porte</td>
+						<td>à partir de 350€</td>
+					</tr>
+					<tr>
+						<td>Installation de serrure</td>
+						<td>à partir de 150€</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="contact">
+			<h2>Contactez-nous</h2>
+			<form action="traitement.php" method="post">
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" required><br>
+				<label for="tel">Téléphone :</label>
+				<input type="tel" id="tel" name="tel" required><br>
+				<label for="email">Email :</label>
+				<input type="email" id="email" name="email" required><br>
+				<label for="message">Message :</label>
+				<textarea id="message" name="message" required></textarea><br>
+				<input type="submit" value="Envoyer">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>S.O.S Serrurier Mobile - Dépannage de serrurerie urgente - France - Téléphone :
+     <a href="tel:+33769592069"> 07 69 59 20 69 </a> - Email : <a href="mailto:contact@2mn.info">contact</a></p>
+  	<p>&copy; 2023 S.O.S Serrurier Mobile . Tous droits réservés.</p>
+  </footer>

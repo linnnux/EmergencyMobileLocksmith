@@ -1,0 +1,249 @@
+/* CSS */
+
+/* Style de base pour le corps de la page */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: rgba(255,255,255,0.9);
+	color: rgba(0,0,0,0.8);
+}
+
+/* Style pour le header */
+header {
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+nav
+{
+	padding: 8px;
+	margin: auto;
+	margin-top:16px;
+
+	background-color: #333;
+	width: 30%;
+	border-radius: 4px;
+}
+/* Style pour la navigation */
+nav a
+{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+nav a:hover
+{
+	color: red;
+}
+
+/* Style pour le titre principal */
+h1 {
+	font-size: 2rem;
+	margin: 0;
+	background: linear-gradient(to right, red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	background-size: 200% auto;
+	background-clip: text;
+	animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient
+{
+  to
+	{
+    background-position: -200% center;
+  }
+}
+
+/* Style pour le paragraphe du header */
+header p
+{
+	margin: 10px 0 0;
+}
+
+/* Style pour le numéro de téléphone */
+header a
+{
+	color: #fff;
+	font-weight: bold;
+}
+
+/* Style pour les sections */
+section
+{
+	padding: 32px;
+}
+
+/* Style pour les titres de section */
+section h2 {
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+
+/* Style pour les listes */
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Style pour les tableaux */
+table {
+	border-collapse: collapse;
+	margin: 20px 0;
+	width: 100%;
+}
+
+table th, table td {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+table th {
+	background-color: #eee;
+}
+
+/* Style pour le formulaire de contact */
+form {
+	max-width: 500px;
+	margin: auto;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="tel"], form input[type="email"], form textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+form input[type="submit"] {
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+	background-color: #444;
+}
+
+/* Style pour le footer */
+footer {
+	background-color: #ccc;
+	color: #222;
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.container
+{
+	padding: 8px;
+	margin: 8px;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+}
+.call-button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF;
+  border: 4px solid green;
+  border-radius: 50px;
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+	margin: auto;
+	box-shadow: 1px 1px 4px #333;
+	width: 250px;
+	height: 54px;
+}
+.call-button:hover
+{
+	box-shadow: 1px 1px 8px #333;
+	border: 4px solid rgba(0,128,0,0.7);
+}
+.call-button i {
+  font-size: 24px;
+  margin-right: 10px;
+	color: red;
+	background-color: #FFF;
+
+}
+
+.phone-number
+{
+	color: red;
+  margin: 0 5px;
+	background-color: #FFF;
+
+}
+.phone-number a
+{
+	color: red;
+  margin: 0 5px;
+	text-decoration: none;
+}
+
+.services-container {
+  overflow-x: auto;
+  padding: 0 20px;
+	margin: 8px;
+	margin-top:64px;
+	text-align: center;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  list-style-type: none;
+  margin: 2px;
+  padding: 8px;
+  animation: scroll 20s linear infinite alternate;
+}
+.services-list li::before
+{
+	content: " ";
+	margin: 2px;
+	color: red;
+}
+.services-list li
+{
+
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 200px));
+  }
+}
