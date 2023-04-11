@@ -189,8 +189,8 @@ div.sticky {
   cursor: pointer;
 	margin: auto;
 	box-shadow: 1px 1px 4px #333;
-	width: 250px;
-	height: 54px;
+	max-width: 200px;
+	height: 32px;
 }
 .call-button:hover
 {
